@@ -14,7 +14,7 @@ Complete the code by writing the functions based on their given function definit
 * What is each function returning?
 
 ## Steps
-1. Ask the user for a vector size, and populate a vector based on their input.
+1. Write code to fill a vector with ints given by the user through standard input on line 45
 2. Complete each function by implementing their definition.
 
 Sample Output:
