@@ -1,6 +1,7 @@
 /*
     CS-11 SI Vector & Function practice, vectorFunctions.cpp
-    Purpose: Practice looping through a string and using an if statement
+    Purpose: Practice accessing and iterating through vectors,
+    as well as tracking variables through function calls
 
     @author Your Name
     @version 1.0  00/00/2024
