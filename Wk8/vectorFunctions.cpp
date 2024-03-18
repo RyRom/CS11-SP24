@@ -35,17 +35,14 @@ int sumVector(vector<int> v);
 vector<int> reverserVector(vector<int> v);
 
 int main() {
-    // Have the user fill a vector of ints
     int size, num;
     vector<int> myVector;
 
+    // Have the user fill a vector of ints
     cout << "Enter a vector size: ";
     cin >> size;
     cout << "Enter " << size << " integers, separated by a space:\n";
-    for (int i = 0; i < size; i++) {
-        cin >> num;
-        myVector.push_back(num);
-    }
+    // TODO: Fill vector with ints
 
     // Print different calculations of the vector
     vector<int> myVectorReversed = reverserVector(myVector);
