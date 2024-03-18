@@ -31,3 +31,5 @@ Sum of elements: 22
 ## Review Quetions:
 * Why do we have the reverse function return a new vector instead of just printing the original bakwards?
 * Are there alternative ways to perform sum and reverse?
+* Could I change the reverse function so that instead of returning a new vector with the elements reversed, it instead reverses the elements in-place in the original vector?
+* How? Why would/wouldn't I do that?
