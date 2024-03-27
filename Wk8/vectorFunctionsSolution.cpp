@@ -21,6 +21,7 @@ void printVector(vector<int> v) {
     for (unsigned i = 0; i < v.size(); i++) {
         cout << v.at(i) << " ";
     }
+    cout << endl;
 }
 
 /**
@@ -34,7 +35,6 @@ int sumVector(vector<int> v) {
     for (unsigned i = 0; i < v.size(); i++) {
         sum += v.at(i);
     }
-
     return sum;
 }
 
@@ -45,24 +45,23 @@ int sumVector(vector<int> v) {
  * @return A new vector of identical size with the elements reversed
  */
 vector<int> reverserVector(vector<int> v) {
-    vector<int> r;
-    for (int i = v.size(); i >= 0; i--) {
-        r.push_back(v.at(i));
+    vector<int> reverse;
+    for (int i = v.size() - 1; i >= 0; i--) {
+        reverse.push_back(v.at(i));
     }
-    return r;
+    return reverse;
 }
 
 int main() {
+    // Have the user fill a vector of ints
     int size, num;
     vector<int> myVector;
 
-    // Have the user fill a vector of ints
     cout << "Enter a vector size: ";
     cin >> size;
     cout << "Enter " << size << " integers, separated by a space:\n";
     for (int i = 0; i < size; i++) {
         cin >> num;
-        // myVector.at(i) = num;
         myVector.push_back(num);
     }
 
@@ -72,9 +71,9 @@ int main() {
 
     cout << "\nOriginal Vector: ";
     printVector(myVector);
-    cout << "\nReversed: ";
+    cout << "Reversed: ";
     printVector(myVectorReversed);
-    cout << "\nSum of elements: " << sum << endl;
+    cout << "Sum of elements: " << sum << endl;
 
     return 0;
 }
